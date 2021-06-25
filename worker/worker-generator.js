@@ -3,11 +3,11 @@ addEventListener('fetch', event => {
 });
 
 const tokenURL = 'https://www.googleapis.com/oauth2/v4/token';
-const clientId = '58094879805-4654k2k5nqdid5bavft7fvea5u9po0t1.apps.googleusercontent.com';
-const clientSecret = 'ZNPZ-vS6N9Zjsyb_sNMZmXHL';
+const clientId = '202264815644.apps.googleusercontent.com';
+const clientSecret = 'X4Z3ca8xfWDb1Voo-F9a7ZxJ';
 const grantType = 'authorization_code';
 const redirectURI = 'urn:ietf:wg:oauth:2.0:oob';
-const jsURL = 'https://raw.githubusercontent.com/ParveenBhadooOfficial/Bhadoo-Drive-Index/master/worker/worker-beta.js';
+const jsURL = 'https://raw.githubusercontent.com/XcodersHub/Bhadoo-Drive-Index/master/worker/worker-beta.js';
 
 async function handleRequest(request) {
     let title = getParameterByName(request.url, 'site_name') || 'Bhadoo Drive Index';
@@ -285,7 +285,7 @@ async function handleRequest(request) {
 <body class="mdui-theme-primary-blue-grey mdui-theme-accent-blue">
 <div class="mdui-container">
     <br><br>
-    <a href="https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index"><img border="0" alt="Bhadoo Cloud" src="https://cdn.jsdelivr.net/gh/jscdn/svg@1.0.1/bhadoo-cloud-logo.svg" height="30px"></a><h3>Drive Index Generator - Beta</h3>
+    <a href="https://github.com/XcodersHub/Bhadoo-Drive-Index"><img border="0" alt="Bhadoo Cloud" src="https://cdn.jsdelivr.net/gh/jscdn/svg@1.0.1/bhadoo-cloud-logo.svg" height="30px"></a><h3>Drive Index Generator - Beta</h3>
     <br>
     <div class="mdui-row">
         <div class="mdui-col-sm-2">
@@ -311,17 +311,6 @@ async function handleRequest(request) {
                 <i class="mdui-icon material-icons">folder_open</i>
                 <label class="mdui-textfield-label">Drive Folder/Shared Drive ID instead of root</label>
                 <input class="mdui-textfield-input" type="text" value="root" name="root"/>
-            </div>
-            <h4>Disabled: Now Enter Details inside the code, multiple users supported.</h4>
-            <div class="mdui-textfield">
-                <i class="mdui-icon material-icons">account_circle</i>
-                <label class="mdui-textfield-label">Set Username (Disabled)</label>
-                <input class="mdui-textfield-input" type="text" name="user" readonly>
-            </div>
-            <div class="mdui-textfield">
-                <i class="mdui-icon material-icons">enhanced_encryption</i>
-                <label class="mdui-textfield-label">Set Password (Disabled)</label>
-                <input class="mdui-textfield-input" type="password" name="root_pass" readonly>
             </div>
             <div class="mdui-textfield">
                 <input class="mdui-btn mdui-color-theme-accent mdui-ripple" type='submit' value="2. Generate Code"/>
